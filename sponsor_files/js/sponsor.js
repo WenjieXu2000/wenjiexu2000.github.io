@@ -4,9 +4,8 @@ const mbox = bd.querySelector('#MainBox')
 const dbox = bd.querySelector('#donateBox')
 
 const qqr = 'https://xwj770427414.github.io/sponsor_files/imgs/sponsor-wechat.png'
-const aqr = 'https://xwj770427414.github.io/sponsor_files/imgs/sponsor-alipay.jpg'
+const aqr = 'https://xwj770427414.github.io/sponsor_files/imgs/sponsor-alipay.png'
 const wqr = 'https://xwj770427414.github.io/sponsor_files/imgs/sponsor-wechat.png'
-const war = 'https://xwj770427414.github.io/sponsor_files/imgs/appreciate-wechat.png'
 const showQR = (QR) => {
 	if (QR) mbox.style.backgroundImage = `url(${ QR })`
 	bd.classList.add('blur')
