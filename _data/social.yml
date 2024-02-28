@@ -1,27 +1,15 @@
 - sitename: GitHub
-  name: mzlogin
-  url: https://github.com/mzlogin
-
-- sitename: 掘金
-  name: mzlogin
-  url: http://gold.xitu.io/user/570ddaeb2e958a005c63b2da
-
-- sitename: LinkedIn
-  name: mazhuang
-  url: https://www.linkedin.com/in/mazhuang
+  name: Wenjie Xu
+  url: https://github.com/WenjieXu2000
 
 - sitename: 博客
-  name: 码志
-  url: http://mazhuang.org
+  name: Wenjie Xu
+  url: https://wenjiexu2000.github.io
 
-- sitename: 微博
-  name: mzlogin
-  url: http://weibo.com/mzlogin
+- sitename: CSDN
+  name: _泥鳅
+  url: https://blog.csdn.net/weixin_46283583
 
-- sitename: 知乎
-  name: mzlogin
-  url: http://www.zhihu.com/people/mzlogin
-
-- sitename: 豆瓣
-  name: 闷骚的程序员
-  url: http://www.douban.com/people/freedim
+- sitename: 微信
+  name: _
+  url: https://blog.csdn.net/weixin_46283583

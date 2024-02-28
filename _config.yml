@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://wenjiexu2000.github.io/
+url: https://wenjiexu2000.github.io
 date_format: "ordinal"
 title: 徐文杰
 subtitle: "个人博客"
