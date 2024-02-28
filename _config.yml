@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://xuwenjie.github.io
+url: https://wenjiexu2000.github.io/
 date_format: "ordinal"
 title: 徐文杰
 subtitle: "个人博客"
@@ -13,7 +13,7 @@ encoding: "utf-8"
 # 页面左下角显示的年份
 since: 2024
 # 源码仓库，请替换成自己的
-repository: WenjieXu2000/xuwenjie.github.io
+repository: WenjieXu2000/wenjiexu2000.github.io
 # 对 css 和 js 资源的 cdn 加速配置
 cdn:
     jsdelivr:
