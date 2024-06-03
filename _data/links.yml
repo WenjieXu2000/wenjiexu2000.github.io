@@ -1,0 +1,15 @@
+- name: 码志
+  url: http://mazhuang.org
+  src: life
+  
+- name: 见字如面
+  url: https://hiwannz.com
+  src: www
+
+- name: 梦境迷离
+  url: https://dreamylost.cn
+  src: www
+
+- name: lch2010
+  url: https://lch2010.github.io/
+  src: www
