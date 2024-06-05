@@ -1,7 +1,7 @@
 ---
 layout: page
-title: submenus
-nav: true
+title: Submenus
+nav: true # 是否启用
 nav_order: 8
 dropdown: true
 children:
