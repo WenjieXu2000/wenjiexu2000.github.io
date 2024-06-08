@@ -1,10 +1,10 @@
 ---
-layout: default
-permalink: /blog/
-title: Blog
+layout: default # 指定使用的布局模板为 default.
+permalink: /blog/ # 设置此页面的永久链接为 /blog/.
+title: Blog # 页面标题为 "Blog".
 nav: true
-nav_order: 1
-pagination:
+nav_order: 1 # 表明此页面应出现在导航栏中, 并且顺序为 1.
+pagination: # 分页设置, 启用分页, 每页显示 5 篇文章,按日期降序排列.
   enabled: true
   collection: posts
   permalink: /page/:num/

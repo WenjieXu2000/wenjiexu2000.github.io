@@ -2,17 +2,17 @@
 layout: about
 title: About
 permalink: /
-subtitle: 徐文杰. Graduate Student.
+subtitle: Wayne Xu (徐文杰)
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>Beijing, Haidian 101408</p>
 
 news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 

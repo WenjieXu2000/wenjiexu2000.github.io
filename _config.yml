@@ -130,7 +130,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: My blog # blog_name will be displayed in your blog page
-blog_description: 零散的知识, 简短的观点, 作为片段汇集于此
+blog_description: 零散的知识, 简短的观点
 permalink: /blog/:year/:title/
 lsi: true # produce an index for related posts
 
@@ -291,8 +291,8 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["formatting", "images", "links", "math", "code"] # these tags will be displayed on the front page of your blog
-display_categories: ["blockquotes"] # these categories will be displayed on the front page of your blog
+display_tags: ["research","ideas", "writing", "code", "diary", "image"] # these tags will be displayed on the front page of your blog
+display_categories: ["tools", "life"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
