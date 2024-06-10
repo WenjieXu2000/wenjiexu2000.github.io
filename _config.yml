@@ -291,8 +291,8 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["research","ideas", "writing", "code", "diary", "image"] # these tags will be displayed on the front page of your blog
-display_categories: ["tools", "life"] # these categories will be displayed on the front page of your blog
+display_tags: ["research", "writing", "code", "image"] # these tags will be displayed on the front page of your blog
+display_categories: ["collection", "work", "tool","insight", "life"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
