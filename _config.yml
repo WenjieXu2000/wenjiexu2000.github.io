@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Wenjie Xu # the website title (if blank, full name will be used instead)
+title: Wenjie Xu's HomePage # the website title (if blank, full name will be used instead)
 first_name: Wenjie
 # middle_name:
 last_name: Xu
@@ -189,7 +189,7 @@ collections:
 announcements:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  limit: 3 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: true
@@ -291,8 +291,8 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["research", "writing", "code", "image"] # these tags will be displayed on the front page of your blog
-display_categories: ["collection", "work", "tool","insight", "life"] # these categories will be displayed on the front page of your blog
+display_tags: ["Insight", "Paper", "Method", "Manuscript", "Python", "TypeScript", "Github", "System"] # these tags will be displayed on the front page of your blog
+display_categories: ["Collection", "Research", "Writing", "Code", "Tool", "Life", "Image"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

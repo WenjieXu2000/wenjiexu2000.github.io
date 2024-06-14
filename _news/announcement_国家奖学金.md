@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-National Undergraduate Scholarship 2022
+Undergraduate National Scholarship, 2022

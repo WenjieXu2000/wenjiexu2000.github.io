@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-President's Scholarship 2022
+School President Scholarship, 2022

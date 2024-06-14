@@ -8,7 +8,7 @@ pagination: # 分页设置, 启用分页, 每页显示 5 篇文章,按日期降�
   enabled: true
   collection: posts
   permalink: /page/:num/
-  per_page: 5
+  per_page: 10
   sort_field: date
   sort_reverse: true
   trail:
