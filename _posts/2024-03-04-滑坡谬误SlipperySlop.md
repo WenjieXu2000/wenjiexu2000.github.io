@@ -3,8 +3,8 @@ layout: post
 title: 滑坡谬误（Slippery Slope）在网络讨论中的显现
 date: 2024-03-04 17:42:00
 description: 网络讨论中的滑坡谬误如何将合理的技术质疑演变为情绪化的标签化攻击
-tags: Discussion
-categories: Collection
+tags: discussion
+categories: collection
 featured: false
 related_posts: false
 giscus_comments: true
