@@ -14,12 +14,12 @@ profile:
 news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 research_summary: # show the research summary
-  - title: "Volumetric Video"
-    image: "/assets/img/research/volumetric_video.png"
-  - title: "Neural Simulator"
-    image: "/assets/img/research/neural_simulator.png"
-  - title: "Interactive Agent"
-    image: "/assets/img/research/interactive_agent.png"
+  - title: "Research Question 1"
+    image: "/assets/img/research/Research_Question_1.png"
+  - title: "Research Question 2"
+    image: "/assets/img/research/Research_Question_2.png"
+  - title: "Research Question 3"
+    image: "/assets/img/research/Research_Question_3.png"
 social: true # includes social icons at the bottom of the page
 ---
 

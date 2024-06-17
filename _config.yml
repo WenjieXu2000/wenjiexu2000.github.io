@@ -210,7 +210,7 @@ kramdown:
     span:
       line_numbers: false # Do not modify it, it will change the display of inline code to a new line with a line number.
     block:
-      line_numbers: true
+      line_numbers: false
       start_line: 1
 
 # Includes & excludes
