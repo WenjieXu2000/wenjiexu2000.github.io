@@ -19,6 +19,8 @@
   --global-highlight-color: #{$red-color-dark};
   --global-back-to-top-bg-color: rgba(#{red($black-color)}, #{green($black-color)}, #{blue($black-color)}, 0.4);
   --global-back-to-top-text-color: #{$white-color};
+  --global-newsletter-bg-color: #{$white-color};
+  --global-newsletter-text-color: #{$black-color};
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -50,7 +52,6 @@
   .repo-img-light {
     display: block;
   }
-
   .repo-img-dark {
     display: none;
   }
@@ -82,6 +83,8 @@ html[data-theme="dark"] {
   --global-card-bg-color: #{$grey-900};
   --global-back-to-top-bg-color: rgba(#{red($white-color)}, #{green($white-color)}, #{blue($white-color)}, 0.5);
   --global-back-to-top-text-color: #{$black-color};
+  --global-newsletter-bg-color: #{$grey-color-light};
+  --global-newsletter-text-color: #{$grey-color-dark};
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -99,7 +102,6 @@ html[data-theme="dark"] {
   .repo-img-light {
     display: none;
   }
-
   .repo-img-dark {
     display: block;
   }
