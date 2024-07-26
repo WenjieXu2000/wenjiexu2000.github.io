@@ -53,7 +53,7 @@ nav_order: 2
           {% assign post_date = post.date %}
           <li class="post-item" id="{{ post_date | date: '%Y-%m-%d' }}">
             <span class="post-date">{{ post_date | date: "%b %-d" }}</span>
-            <a class="post-title" href="{{ post.url }}">{{ post.title | escape }}</a>
+            <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
           </li>
         {% endfor %}
       </ul>
