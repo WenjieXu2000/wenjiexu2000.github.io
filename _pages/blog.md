@@ -9,7 +9,7 @@ pagination: # 分页设置, 启用分页, 每页显示 5 篇文章,按日期降�
   collection: posts
   permalink: /page/:num/
   per_page: 10
-  sort_field: date
+  sort_field: last_updated # 按照last_updated的日期降序排序
   sort_reverse: true
   trail:
     before: 1 # The number of links before the current page
@@ -31,30 +31,39 @@ pagination: # 分页设置, 启用分页, 每页显示 5 篇文章,按日期降�
 
 {% if site.display_tags or site.display_categories %}
 
-  <div class="tag-category-list">
-    <ul class="p-0 m-0">
-      {% for tag in site.display_tags %}
+<div class="tag-category-container">
+  {% if site.display_tags %}
+  <div class="tag-list">
+    <h3><i class="fas fa-hashtag"></i>Tags</h3>
+    <ul class="tag-cloud">
+      {% for tag in site.tags %}
         <li>
-          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
+          <a href="{{ tag[0] | slugify | prepend: '/blog/tag/' | relative_url }}" {% if page.tag == tag[0] %}class="selected"{% endif %}>
+            {{ tag[0] }} <span class="tag-count">({{ tag[1].size }})</span>
+          </a>
         </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
-      {% endfor %}
-      {% if site.display_categories.size > 0 and site.display_tags.size > 0 %}
-        <p>&bull;</p>
-      {% endif %}
-      {% for category in site.display_categories %}
-        <li>
-          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
-        </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
       {% endfor %}
     </ul>
   </div>
   {% endif %}
+
+{% if site.display_categories %}
+
+  <div class="category-list">
+    <h3><i class="fas fa-folder"></i>Categories</h3>
+    <ul class="category-cloud">
+      {% for category in site.categories %}
+        <li>
+          <a href="{{ category[0] | slugify | prepend: '/blog/category/' | relative_url }}" {% if page.category == category[0] %}class="selected"{% endif %}>
+            {{ category[0] }} <span class="category-count">({{ category[1].size }})</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</div>
+{% endif %}
 
 {% assign featured_posts = site.posts | where: "featured", "true" %}
 {% if featured_posts.size > 0 %}
@@ -81,7 +90,7 @@ pagination: # 分页设置, 启用分页, 每页显示 5 篇文章,按日期降�
                     {% else %}
                       {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
                     {% endif %}
-                    {% assign year = post.date | date: "%Y" %}
+                    {% assign year = post.last_updated | date: "%Y" %}
 
                     <p class="post-meta">
                       {{ read_time }} min read &nbsp; &middot; &nbsp;
@@ -142,7 +151,12 @@ pagination: # 分页设置, 启用分页, 每页显示 5 篇文章,按日期降�
       <p>{{ post.description }}</p>
       <p class="post-meta">
         {{ read_time }} min read &nbsp; &middot; &nbsp;
-        {{ post.date | date: '%B %d, %Y' }}
+        <!-- 增加显示last_updated的功能，如果只有date，就显示date。 -->
+        {% if post.last_updated %}
+          Last updated: {{ post.last_updated | date: '%B %d, %Y' }}
+        {% else %}
+          {{ post.date | date: '%B %d, %Y' }}
+        {% endif %}
         {% if post.external_source %}
         &nbsp; &middot; &nbsp; {{ post.external_source }}
         {% endif %}

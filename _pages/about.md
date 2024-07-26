@@ -23,8 +23,10 @@ research_summary: # show the research summary
 social: true # includes social icons at the bottom of the page
 ---
 
----------
+---
+
 <!--my introduction start-->
+
 👨‍🎓 I’m currently pursuing a master's degree in Management Science and Engineering at the Institutes of Science and Development, Chinese Academy of Sciences <a href="http://www.casisd.cn/" target="_blank"> (CASISD). </a>
 
 🔭 My research primarily focuses on <b>Risk Management</b>, exploring effective strategies for risk assessment and

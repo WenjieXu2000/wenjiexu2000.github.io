@@ -16,9 +16,9 @@ keywords: Wenjie Xu, Wayne Xu, 徐文杰, UCAS, University of Chinese Academy of
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: wenjiexu2000.github.io # the base hostname & protocol for your site
-baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
-last_updated: ture # set to true if you want to display last updated in the footer
+url: https://wenjiexu2000.github.io # the base hostname & protocol for your site
+baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
+last_updated: true # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
 
@@ -131,8 +131,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: My blog # blog_name will be displayed in your blog page
-blog_description: 零散的知识, 简短的观点
+blog_name: Eclectic Explorations # blog_name will be displayed in your blog page
+blog_description: Bridging ideas from different fields.
 permalink: /blog/:year/:title/
 lsi: true # produce an index for related posts
 
@@ -225,7 +225,7 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: ["_pages","_app"]
+include: ["_pages", "_app"]
 exclude:
   - bin/
   - CONTRIBUTING.md

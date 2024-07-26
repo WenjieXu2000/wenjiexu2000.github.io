@@ -1,7 +1,9 @@
 <div id="research-summary">
   <div class="research-tabs">
     {% for research in page.research_summary %}
-      <div class="research_tab {% if forloop.first %}active{% endif %}" onclick="toggle_research_vis('research_{{ forloop.index }}', this)">{{ research.title }}</div>
+      <div class="research_tab {% if forloop.first %}active{% endif %}" onclick="toggle_research_vis('research_{{ forloop.index }}', this)">
+        {{ research.title }}
+      </div>
     {% endfor %}
   </div>
 
@@ -10,11 +12,13 @@
       <div
         class="research_summary"
         id="research_{{ forloop.index }}"
-        style="display: {% if forloop.first %}block{% else %}none{% endif %}">
+        style="display: {% if forloop.first %}block{% else %}none{% endif %}"
+      >
         <img
           class="research_picture"
           src="{{ research.image }}"
-          alt="{{ research.title }}">
+          alt="{{ research.title }}"
+        >
       </div>
     {% endfor %}
   </div>
@@ -22,17 +26,17 @@
 
 <script>
   function toggle_research_vis(target, tabElement) {
-    var summaries = document.getElementsByClassName("research_summary");
+    var summaries = document.getElementsByClassName('research_summary');
     for (var i = 0; i < summaries.length; i++) {
-        summaries[i].style.display = "none";
+      summaries[i].style.display = 'none';
     }
-    document.getElementById(target).style.display = "block";
+    document.getElementById(target).style.display = 'block';
 
-    var tabs = document.getElementsByClassName("research_tab");
+    var tabs = document.getElementsByClassName('research_tab');
     for (var i = 0; i < tabs.length; i++) {
-        tabs[i].className = "research_tab";
+      tabs[i].className = 'research_tab';
     }
-    tabElement.className = "research_tab active";
+    tabElement.className = 'research_tab active';
   }
 </script>
 
@@ -58,7 +62,6 @@
     font-family: inherit;
     /* 确保与网站其他部分的字体一致 */
   }
-
 
   .research_tab:last-child {
     margin-right: 0;

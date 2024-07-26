@@ -56,9 +56,7 @@
       "startDate": "2023-09-01",
       "endDate": "2026-06-30",
       "score": "10",
-      "courses": [
-        "Management Science and Engineering"
-      ]
+      "courses": ["Management Science and Engineering"]
     }
   ],
   "awards": [
