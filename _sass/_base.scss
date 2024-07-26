@@ -2,6 +2,9 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+@import "blog";
+@import "archive";
+
 // Typography
 
 p,
@@ -1294,6 +1297,3 @@ ninja-keys::part(ninja-input-wrapper) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
 }
-
-@import "blog";
-@import "archive";
