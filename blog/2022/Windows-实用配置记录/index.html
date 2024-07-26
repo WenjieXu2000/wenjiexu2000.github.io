@@ -19,7 +19,7 @@
 </code></pre> <ul> <li>将每个资源管理器窗口作为独立的实例以提高稳定性</li> </ul> <pre><code class="language-cmd">reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v SeparateProcess /t REG_DWORD /d 1 /f
 </code></pre> <ul> <li>不要将驱动程序和内核模式系统代码放进虚拟内存（可能解决一些诡异的驱动稳定性问题）</li> </ul> <pre><code class="language-cmd">reg add "HKLM\System\CurrentControlSet\Control\Session Manager\Memory Management" /v DisablePagingExecutive /t REG_D
 </code></pre> <h2 id="系统界面">系统界面</h2> <ul> <li>桌面、资源管理器等的字体缩放异常且无法通在设置中恢复，修改注册表重置缩放</li> </ul> <pre><code class="language-cmd">Windows Registry Editor Version 5.00
- 
+
 [HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics]
 "IconTitleWrap"="1"
 "Shell Icon Size"="32"
