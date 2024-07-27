@@ -50,7 +50,7 @@ pagination: # 分页设置, 启用分页, 每页显示 5 篇文章,按日期降�
 {% if site.display_categories %}
 
   <div class="category-list">
-    <h3><i class="fas fa-folder"></i>Categories</h3>
+    <h3><i class="fas fa-tag"></i>Categories</h3>
     <ul class="category-cloud">
       {% for category in site.categories %}
         <li>

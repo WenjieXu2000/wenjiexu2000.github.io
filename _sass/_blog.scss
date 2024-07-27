@@ -66,19 +66,3 @@
     }
   }
 }
-
-@media (max-width: 576px) {
-  .tag-category-container {
-    margin: 1rem 0;
-  }
-
-  .tag-cloud,
-  .category-cloud {
-    gap: 0.3rem;
-
-    a {
-      padding: 0.2rem 0.6rem;
-      font-size: 0.8rem;
-    }
-  }
-}
